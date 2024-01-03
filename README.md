@@ -16,7 +16,7 @@ Make sure you have Python installed. Create a virtual environment (optional) and
     
 ### Step 2: Dataset
 
-Download [the dataset](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw) and place it in the appropriate directory. In our example, the dataset is assumed to be in the ".../images" directory. You can change the *root_dir* parameter in the CancerDataset class accordingly.
+Download some samples of [the dataset](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw) and place it in the appropriate directory. In our example, the dataset is assumed to be in the ".../images" directory. You can change the *root_dir* parameter in the CancerDataset class accordingly.
 
 ### Step 3: Run the Code
 
