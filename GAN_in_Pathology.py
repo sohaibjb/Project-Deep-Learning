@@ -91,6 +91,7 @@ class GAN:
         with torch.no_grad():
             z = torch.randn(5, latent_dim).to(self.device)
             generated_images = self.generator(z)
+            # save your images on your own directory by changing the path below
             save_image(generated_images, f"C:/Users/BobLoblaw/Desktop/Course Materials/ARI5004/project/generated/sample_{epoch}_{batch_idx}.png", nrow=5, normalize=True)
 
 class CancerDataset(Dataset):
@@ -122,6 +123,7 @@ if __name__ == '__main__':
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
 
+    # replace root_dir with your own path to the dataset
     dataset = CancerDataset(root_dir='../assignment2_part1/images/images', transform=transform)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=4, drop_last=True)
 
